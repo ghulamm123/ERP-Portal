@@ -1,0 +1,222 @@
+body
+{
+  background-color: rgb(0, 26, 51);
+
+
+}
+
+
+
+@font-face
+{
+    font-family: 'Rubik';
+    src :url(Fonts/Rubik-Light.ttf);
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face
+{
+    font-family: 'Ubuntu';
+    src :url(Fonts/Ubuntu.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+.ceoimage
+{
+    border-radius: 100%;
+    background-color: ghostwhite;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 37px;
+    left: 20px;
+    background-image:url("images/sir.png");
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
+h1
+{
+    color: gainsboro;
+    font-size: 29px;
+    font-family: Rubik;
+    font-weight: bold;
+    padding-left: 90px;
+    padding-top: 30px;
+
+}/*CEO HEADING*/
+
+
+
+.sm
+{
+    background-color:rgb(255, 255, 255);
+     height: 550px;
+     width: 86%;
+     position: absolute;
+     top: 56%;
+     left: 57%;
+     transform: translate(-50%,-50%);
+}
+.nav1
+{
+    position: relative;
+    top: 55px;
+    position: relative;
+    left: -30px;
+}
+.nav1 ul li
+{
+   list-style-type: none;
+
+   font-size: 16px;
+   padding: 10px;
+}
+.nav1 a
+{
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+    font-family:Ubuntu; 
+}
+.nav1 a:hover
+{
+    color:gainsboro;
+    transition-delay: 0.02s;
+}
+
+#myTable
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+#Insert
+{
+    position: absolute;
+    top: 59%;
+    left: 60%;
+    transform: translate(50%,-50%);
+     background-color: rgb(0, 143, 179);
+     height: 38px;
+     width: 150px;
+     outline: none;
+     font-family: Rubik;
+     font-size: 18px;
+     letter-spacing: 0.05em;
+     border-top-right-radius: 10px;;
+     border-bottom-left-radius: 10px;;
+     border: none;
+     color: white;
+     text-transform: uppercase;
+}
+#Insert:hover
+{
+    background-color: rgb(153, 204, 255);
+}
+
+input[type="text"]
+{
+    
+    outline:none;
+    height: 30px;
+    font-size: 20px;
+    color: rgb(38, 38, 38);
+}
+
+input[type="text"]:hover
+{
+    background-color: rgb(224, 224, 235);
+  
+
+
+}
+.text1
+{
+    border: 2px solid rgb(163, 163, 194);
+    border-radius: 4px;
+    background-color:rgb(117, 163, 163);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+font-size: 18px;
+
+position: absolute;
+top: 34%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+#p1 
+{
+	position: absolute;
+top: 8%;
+left: 34%;
+transform: translate(-50%,-50);
+
+  color: rgba(0,0,0,0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+font-size: 30px;
+	
+}
+#p2
+{
+		
+		position: absolute;
+top: 50%;
+left: 38%;
+transform: translate(-50%,-50);
+
+  color: rgba(0,0,0,0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+font-size: 30px;
+
+	
+}
+
+
+
+.text2
+{
+    border: 2px solid rgb(163, 163, 194);
+    border-radius: 4px;
+    background-color:rgb(117, 163, 163);
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+font-size: 18px;
+position: absolute;
+top: 74%;
+left: 50%;
+transform: translate(-50%,-50%);
+
+}
+
+
+#Delete
+{
+    border: none;
+     background-color: rgb(92, 92, 138);
+     height: 38px;
+     width: 105px;
+     outline: none;
+     font-family: Ubuntu;
+     font-size: 14px;
+     letter-spacing: 0.05em;
+     border-radius: 30px;
+     text-transform: uppercase;
+     border-top-right-radius: 10px;;
+     border-bottom-left-radius: 10px;;
+     color: whitesmoke;
+
+    }
+
+
+#Delete:hover
+{
+    background-color: rgb(194, 194, 214);
+}

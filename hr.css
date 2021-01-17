@@ -1,0 +1,74 @@
+body
+{
+    background-color: rgb(38, 38, 38);
+}
+@font-face{
+    font-family:'Raleway';
+    src :url(Fonts/Raleway-Regular.ttf);
+    font-style: normal;
+    font-weight: lighter;
+}
+.lg input[type="submit"]
+{
+
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    font-family: Raleway;
+   outline:none;
+    background:none;
+    color: white;
+    font-size: 14px;
+    transition: 1s;
+    width: 170px;
+    margin: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+
+
+}
+
+.lg input[type="submit"]:hover
+{
+
+    cursor: pointer;
+    background-color: white;
+    color: rgb(77, 77, 77);
+    
+
+
+}
+
+.buttons
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-40%,-50%);
+    padding: 30px;
+    width: 900px;
+}
+.buttons input[type="submit"]
+{
+
+    border: 1px solid rgb(0, 204, 68);
+    padding: 10px;
+    text-align: center;
+    font-family: Raleway;
+   outline:none;
+    background:none;
+    color: white;
+    font-size: 18px;
+    transition: 0.8s;
+    width: 200px;
+    margin: 20px;
+    text-transform: uppercase;
+
+}
+
+.buttons input[type="submit"]:hover
+{
+    cursor: pointer;
+    background-color:rgb(77, 255, 136);
+}

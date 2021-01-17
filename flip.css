@@ -1,0 +1,174 @@
+
+
+.wrapper {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 250px;
+  height: 400px;
+  perspective: 900px;
+}/*WHOLE BOX*/
+
+.container {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}/*left and right box*/
+
+#c0 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+  z-index: 300;
+  box-shadow: 0px 20px 100px #555;
+
+  background-image: url("images/sign.png");
+  background-position:cover;
+  background-size: 100% 100%;
+}/*STYLING OF INDIVIDUAL BOX*/
+
+#c1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 100%;
+  z-index: 0;
+  background-image: url("images/login1.png");
+  background-position:cover;
+  background-size: 100% 100%;
+}/*STYLING OF INDIVIDUAL BOX*/
+
+#c2 {
+  left: -100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  background-image: url("images/login2.jpg");
+  background-position:cover;
+  background-size: 100% 100%;
+}/*STYLING OF INDIVIDUAL BOX*/
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+
+
+
+
+
+
+
+#i1 {
+  background: linear-gradient(to bottom, #59476f 100%, #7b88d1 100%);
+  background-image: url("images/sign.png");
+  background-position:cover;
+  background-size: 100% 100%;
+}/*UPPER IMAGE*/
+
+#i2 {
+  background: linear-gradient(to bottom, #59476f 100%, #7b88d1 100%);
+  background-image: url("images/sign.png");
+  background-position:cover;
+  background-size: 100% 100%;
+}/*UPPER IMAGE*/
+
+
+.story {
+  position: absolute;
+  top: 45%;
+  left: 0%;
+  height: 55%;
+  width: 100%;
+  background: linear-gradient(to bottom, #ff1a1a 0%, #ff1a1a 40%);
+  z-index: 30;
+}/*STYLING OF LOWER BOX IN WHICH PAra is written*/
+
+#s1 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 100%);
+}/*STYLING OF LOWER BOX IN WHICH PAra is written*/
+
+#s2 {
+  background: linear-gradient(to top, #5b62a2 0%, #7b88d1 120%);
+}/*STYLING OF LOWER BOX IN WHICH PAra is written*/
+
+.info {
+  position: absolute;
+  top: 0%;
+}/*STYLING PAra is written*/
+
+h3 {
+  text-align: center;
+  text-shadow: 0px 0px 10px #eee;
+  color: #eee;
+  letter-spacing: 2px;
+}/*HEADING STYLING  I.E PYRAMID*/
+
+
+h4 {
+  color: #111;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  letter-spacing: 2px;
+}/*no effect*/
+
+h1 {
+  color: #134;
+  position: fixed;
+  top: 0%;
+  left: 100%;
+  letter-spacing: 2px;
+}/*no effect*/
+
+
+p {
+  font-size: 13px;
+  color: #fff;
+  padding: 0px 20px 20px 20px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 1px;
+}/*STYLING OF PARAGRAPH WRITTEN*/
+
+
+@keyframes simple {
+  50% {
+    transform: translateX(10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}
+
+@keyframes simple1 {
+  50% {
+    transform: translateX(-10px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes entry {
+  0% {
+    top: -20%;
+    opacity: 0.1;
+  }
+  100% {
+    top: 0%;
+  }
+}

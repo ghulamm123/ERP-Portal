@@ -1,0 +1,101 @@
+<html>
+
+<head></head>
+<body>
+        <p>
+                <input type="button" id="btnAdd" value="Add Sample Row" onclick="addSampleRow('tblSample')"> 
+                <input type="button" id="btnDelete" value="Delete Selected Rows" onclick="removeSampleRow('tblSample')">
+            </p>
+            
+            <table id="tblSample" border="1" cellspacing="2" cellpadding="10">
+                <tr>
+                    <td>Checkbox</td>
+                    <td>Sample value</td>
+                </tr>
+            </table>
+            <div class="social_icons">
+                    <div class="square">
+                      <div class="icons">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="square">
+                      <div class="icons">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="square">
+                      <div class="icons">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    
+                    </div>
+                  </div>
+                  </div>
+                  
+
+
+<script>
+    /*** FUNCTION TO ADD ROW ***/
+function addSampleRow(id) {
+            
+            /*** We get the table object based on given id ***/
+            var objTable = document.getElementById(id);
+        
+            /*** We insert the row by specifying the current rows length ***/
+            var objRow = objTable.insertRow(objTable.rows.length);
+        
+            /*** We insert the first row cell ***/
+            var objCell1 = objRow.insertCell(0);
+        
+            /*** We  insert a checkbox object ***/
+            var objInputCheckBox = document.createElement("input");
+            objInputCheckBox.type = "checkbox";
+            objCell1.appendChild(objInputCheckBox);
+        
+            
+           
+        
+}
+        
+         /*** FUNCTION TO DELETE ROW ***/
+        function removeSampleRow(id) {
+            /***We get the table object based on given id ***/
+            var objTable = document.getElementById(id);
+        
+            /*** Get the current row length ***/
+            var iRow = objTable.rows.length;
+        
+            /*** Initial row counter ***/
+            var counter = 0;
+        
+            /*** Performing a loop inside the table ***/
+            if (objTable.rows.length > 1) {
+                for (var i = 0; i < objTable.rows.length; i++) {
+        
+                     /*** Get checkbox object ***/
+                    var chk = objTable.rows[i].cells[0].childNodes[0];
+                    if (chk.checked) {
+                        /*** if checked we del ***/
+                        objTable.deleteRow(i);
+                        iRow--;
+                        i--;
+                        counter = counter + 1;
+                    }
+                }
+        
+                /*** Alert user if there is now row is selected to be deleted ***/
+                if (counter == 0) {
+                    alert("Please select the row that you want to delete.");
+                }
+            }else{
+                /*** Alert user if there are no rows being added ***/
+                alert("There are no rows being added");
+            }
+        }
+
+
+</script>
+</body>
+</html>

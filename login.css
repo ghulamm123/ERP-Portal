@@ -1,0 +1,154 @@
+body{
+    background-color:rgb(218, 229, 222);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url("images/login1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+@font-face
+{
+    font-family: 'Rubik';
+    src :url(Fonts/Rubik-Light.ttf);
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face
+{
+    font-family: 'Ubuntu';
+    src :url(Fonts/Ubuntu.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+.l1 {
+    
+
+    height: 270px;
+    width: 300px;
+    background-color:rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    opacity: 0.9;
+    padding: 50px 20px;
+    border-radius: 5%; 
+    
+    
+}
+
+
+
+
+
+.l1 h1{
+
+    margin: 7;
+    padding : 0 0 50px;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    font-family: Rubik;
+    
+}
+
+.l1 p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+     color: white;
+
+}
+
+.l1 input{
+
+    width: 100%;
+    margin-bottom: 22px;
+    font-size:14px;  
+    font-family:Ubuntu; 
+    
+}
+
+
+.l1 input[type ="text"],input[type="password"]
+{
+    border: none;
+    border-bottom: 3px solid  white;
+    outline: none;
+    height: 40px;
+    background-color:rgba(242, 242, 242,0.9);
+    color: black;
+    
+}
+
+
+
+
+.l1 input[type ="text"],input[type="password"]:hover
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color:rgba(242, 242, 242,0.9);
+    border-bottom: 2px solid #677978;
+    color: black;
+}
+
+
+.l1 input[type="button"]
+{
+    border:none;
+    outline: none;
+    background-color: rgb(26, 255, 26);
+    color: snow;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 20px;
+    font-family:Rubik;
+  }
+
+  .l1 input[type="button"]:hover
+  {
+      cursor: pointer;
+      background-color:lightgreen;
+      color: white;
+    
+  }
+
+.l1 a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 20px;
+    color: cornflowerblue;
+}
+
+.l1 a:hover
+{
+    color:whitesmoke;
+}
+
+
+.l1 p
+{
+    color: black;
+    font-family: Ubuntu;
+position: relative;
+top: -15px;
+position: relative;
+left: 10px;
+
+}
+
+.l1 p a
+{
+    color: blue;
+
+}
+
+.l1 p a:hover
+{
+    text-decoration: none;
+    color: cadetblue;
+
+}

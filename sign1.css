@@ -1,0 +1,140 @@
+body{
+
+    background-color: rgb(242, 242, 242);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0 ,0 ,0.2)),url("images/sign.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    
+    background-size: cover;
+}
+
+@font-face
+{
+    font-family: 'Rubik';
+    src :url(Fonts/Rubik-Light.ttf);
+    font-style: normal;
+    font-weight: 900;
+}
+@font-face
+{
+    font-family: 'Ubuntu';
+    src :url(Fonts/Ubuntu.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face{
+    font-family:'Bad script';
+    src: url(fonts/BadScript-Regular.ttf);
+    font-style: normal;
+    font-weight: bolder;
+
+}
+
+.s1{
+
+    height: 305px;
+    width: 300px;
+    background-color:rgb(242, 242, 242);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0.8;
+    padding: 50px 20px;
+    
+}
+.s1 h1
+{
+    
+    color:rgb(153, 179, 255);
+    Font-Family:Ubuntu;
+    font-size: 35px;
+    
+    text-align: center;
+    margin: -7;
+    padding: 0 0 40px;
+}
+
+.s1a
+{
+    color:rgb(0, 64, 255);
+    font-size: 36px;
+
+}
+
+
+
+
+.s1 input{
+
+      width: 100%;
+      color: black;
+      margin-bottom: 40px;
+      font-family: Rubik;
+      
+  
+}
+
+.s1 input[type="text"],input[type="password"]
+{
+    border:none;
+    outline: none;
+    background: transparent;
+    border-bottom: 3px solid  white;
+    height: 40px;
+
+}
+
+.s1 input[type="text"],input[type="password"]:hover
+{
+    transition:0.25s;
+    border-bottom: 2px solid #677978;
+
+}
+
+.s1 input[type="submit"]
+{
+    border: none;
+    outline: none;
+    font-family:Rubik;   
+    height: 40px;
+    border-radius: 22px;
+    background-color: rgb(77, 121, 255);
+    color: #f9f9f9;
+      font-size: 20px;
+    position: relative;
+    top: -22px;
+}
+
+.s1 input[type="submit"]:hover
+{
+    background-color:rgb(128, 159, 255);
+    color: white;
+    
+}
+
+.s1 p
+{
+    color: black;
+    font-family: Ubuntu;
+    position: relative;
+    top: -70px;
+position: relative;
+left: 74px;
+
+}
+
+.s1 p a
+{
+    color: blue;
+    text-decoration:none;
+
+}
+
+.s1 p a:hover
+{
+    text-decoration: none;
+    color: cadetblue;
+
+}

@@ -1,0 +1,77 @@
+
+
+@font-face{
+    font-family:'Raleway';
+    src :url(Fonts/Raleway-Regular.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+@font-face{
+    font-family:'Pacifico';
+    src :url(fonts/Pacifico.ttf);
+
+    font-weight:bold;
+}
+
+
+
+
+body
+{
+    background-color: rgb(0, 26, 51);
+
+}
+
+.maindiv
+{
+
+    background-color: white;
+    height:520px;
+    width:80%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    
+    transition:1s;
+}
+
+.maindiv:hover
+{
+    z-index: 30;
+    
+    box-shadow: 0 25px 60px rgba(0,0,0,0.9);
+}
+
+table
+{
+width: 100%;
+text-align:center;
+position: relative;
+top: 40px;
+border: 1px solid black;
+
+}
+th{
+    height: 50px;
+    border-bottom: 1px solid rgb(0, 26, 51);
+    font-size: 18px;
+    font-family: Pacifico;
+}
+tr,td
+{
+    color: rgba(0,0,0,0.7);
+    font-size: 14px;
+    font-family: Raleway;
+    height: 30px;
+}
+td:hover
+{
+    background-color:rgb(204, 204, 255);
+    color: rgba(0,0,0,0.7); 
+    border-radius: 30px;
+
+}

@@ -1,0 +1,777 @@
+body
+{
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(5, 29, 74, 0.7),rgba(5, 29, 75, 0.7)),url("images/mainpage2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+
+}
+h1
+{
+    font-family: 'Dawning of a New Day';
+
+}
+
+@font-face{
+  font-family:'Notosans';
+  src :url(Fonts/NotoSans-Italic.ttf);
+  font-style: normal;
+  font-weight: lighter;
+}
+@font-face{
+    font-family:'Raleway';
+    src :url(Fonts/Raleway-Regular.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face{
+    font-family:'koho';
+    src :url(fonts/koho.ttf);
+
+    
+}
+@font-face{
+    font-family:'Bad script';
+    src: url(Fonts/BadScript-Regular.ttf);
+    font-style: normal;
+    font-weight: bolder;
+
+}
+
+.nav1 
+
+{
+   position: absolute;
+   left: 47%;    
+}
+
+.nav1 ul
+{
+   list-style-type: none;
+    
+}
+
+.nav1 ul li{
+   list-style-type: none;
+    display: inline-block;
+    padding: 10px 50px;
+    color:white;  
+    font-family: Raleway;
+}
+.nav1 a
+{
+    text-decoration: none;
+color: white;
+font-size: 14px;
+}
+.active
+{
+    background-color: tomato;
+    
+}
+.nav1 li:hover{
+    background-color: tomato;
+    transition: 0.8s;
+    
+}
+
+
+.header
+{
+    font-family: Bad script;
+   
+    font-size: 70px;
+    position: absolute;
+    top: 30%;
+    position:absolute;
+    left: 35%;
+    color: white;
+}
+
+.header1a
+{
+    color: tomato;
+}
+
+
+
+
+#contc
+{
+    text-align: center;
+    font-family: Raleway ;
+    color: #111;
+    position: relative;
+    top: 740px;
+    letter-spacing: 0.12em;
+    font-size: 36px;
+
+
+}
+
+.wrapper {
+    position: absolute;
+    top: 800px;
+    left: 40%;
+    width: 250px;
+    height: 400px;
+    perspective: 900px;
+  }/*WHOLE BOX*/
+  
+  .container {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    transition: .5s all ease;
+    transform: rotateX(60deg) scale(0.7);
+    perspective: 900px;
+    box-shadow: 0px 20px 50px #555;
+    animation: entry 1s linear 1;
+  }/*left and right box*/
+  
+
+  #c0 {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(255, 77, 77) 30%, rgb(255, 77, 77) 100%);
+    z-index: 300;
+    box-shadow: 0px 20px 100px #555;
+  
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("images/ceo.jpg");
+    background-position:cover;
+   background-repeat: no-repeat;
+  }/*STYLING OF CEO BOX*/
+  
+  #c1 {
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+    box-shadow: 0px 20px 100px #555;
+    left: 100%;
+    z-index: 0;
+    background-image: linear-gradient(rgba(5,29,75,0.3),rgba(5,29,75,0.3)),url("images/manager3.jpg");
+    background-position:cover;
+   background-repeat: no-repeat;
+  }/*STYLING OF INDIVIDUAL BOX*/
+  
+  #c2 {
+    left: -100%;
+    z-index: 0;
+    background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+    box-shadow: 0px 20px 100px #555;
+    background-image: linear-gradient(rgba(5,29,75,0.3),rgba(5,29,75,0.3)),url("images/employee.jpg");
+    background-position:cover;
+    background-repeat: no-repeat;
+  }/*STYLING OF EMPLOYEE BOX*/
+  
+  .container:hover {
+    cursor: pointer;
+    transform: rotate(0deg) scale(1) translateY(10px);
+    transition: .5s all ease;
+    z-index: 400;
+  }
+  
+  
+  
+  
+  
+  
+  
+  #i1 {
+    background: linear-gradient(to bottom, #59476f 100%, #7b88d1 100%);
+    background-image: url("images/sign.png");
+    background-position:cover;
+    background-size: 100% 100%;
+  }/*UPPER IMAGE*/
+  
+  #i2 {
+    background: linear-gradient(to bottom, #59476f 100%, #7b88d1 100%);
+    background-image: url("images/sign.png");
+    background-position:cover;
+    background-size: 100% 100%;
+  }/*UPPER IMAGE*/
+  
+  
+  .story {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    height: 55%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(255, 77, 77) 0%, rgb(255, 77, 77) 40%);
+    z-index: 30;
+    font-family: Raleway;
+  }/*STYLING OF LOWER BOX IN WHICH PAra is written*/
+  
+  #s1 {
+    background: linear-gradient(to top, #5b62a2 0%, #7b88d1 100%);
+  }/*STYLING OF LOWER BOX IN WHICH PAra is written*/
+  
+  #s2 {
+    background: linear-gradient(to top, #5b62a2 0%, #7b88d1 120%);
+  }/*STYLING OF LOWER BOX IN WHICH PAra is written*/
+  
+  .info {
+    position: absolute;
+    top: 0%;
+  }/*STYLING PAra is written*/
+  
+  h3 {
+    text-align: center;
+    text-shadow: 0px 0px 10px #eee;
+    color: #eee;
+    letter-spacing:0.1em;
+    font-size: 25px;
+    font-family: Notosans;
+    text-transform: uppercase;
+  
+  }/*HEADING STYLING  I.E PYRAMID*/
+  
+  
+  
+  
+  
+  
+  p {
+    font-size: 13px;
+    color: #fff;
+    padding: 0px 20px 20px 20px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 1px;
+  }/*STYLING OF PARAGRAPH WRITTEN*/
+  
+  
+  @keyframes simple {
+    50% {
+      transform: translateX(10px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(10px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes simple1 {
+    50% {
+      transform: translateX(-10px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateX(-10px);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes entry {
+    0% {
+      top: -20%;
+      opacity: 0.1;
+    }
+    100% {
+      top: 0%;
+    }
+  }
+
+
+ #ceopass
+{
+    border: none;
+    border-bottom: 3px solid  white;
+    outline: none;
+    height: 35px;
+    background-color:rgba(242, 242, 242,0.9);
+    color: black;
+    font-size: 16px;
+    position: relative;
+    left: 13px;
+    font-family:Raleway;
+    width: 220px;
+    border-radius: 20px;
+    
+}
+
+#ceopass:hover
+{
+    border: none;
+    outline: none;
+    height: 37px;
+    background-color:rgba(242, 242, 242,0.9);
+    border-bottom: 3.5px solid rgb(204, 0, 0);
+    color: black;
+}
+
+#s0 input[type="button"]
+{
+    border:none;
+    outline: none;
+    background-color: rgb(255, 26, 26);
+    color: snow;
+    height: 38px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family:Raleway;
+    position: relative;
+    top: 74px;
+    width: 170px;
+    position: relative;
+    left: 38px;
+    padding: 2px;
+    
+   }
+
+   #s0 input[type="button"]:hover
+  {
+      cursor: pointer;
+      background-color:rgb(255, 153, 153);
+      color: white;
+    
+  }
+
+/*STYLING OF MIDDLE BOX FORM*/
+
+
+
+#s2 input[type="text"],input[type="password"]
+{
+    border: none;
+    border-bottom: 3px solid  white;
+    outline: none;
+    height: 35px;
+    background-color:rgba(242, 242, 242,0.9);
+    color: black;
+    font-size: 16px;
+    position: relative;
+    left: 13px;
+    font-family:Raleway;
+    width: 220px;
+    border-radius: 15px;
+    position: relative;
+    top: 0px;
+    
+}
+
+#s2 input[type="text"],input[type="password"]:hover
+{
+    border: none;
+    outline: none;
+    height: 37px;
+    background-color:rgba(242, 242, 242,0.9);
+    border-bottom: 3.5px solid rgb(0, 45, 179);
+    color: black;
+}
+
+#s2 input[type="submit"]
+{
+    border:none;
+    outline: none;
+    background-color: rgb(0, 102, 204);
+    color: snow;
+    height: 38px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family:Raleway;
+    position: relative;
+    top: 21px;
+    width: 170px;
+    position: relative;
+    left: 38px;
+    padding: 2px;
+    
+   }
+
+   #s2 input[type="submit"]:hover
+  {
+      cursor: pointer;
+      background-color:rgb(128, 159, 255);
+      color: white;
+    
+  }
+.header3
+{
+  position: relative;
+   top: 1400;
+  }
+
+/*STYLING OF EMPLOYEE BOX*/
+
+
+
+#s1 input[type="text"],input[type="password"]
+{
+    border: none;
+    border-bottom: 3px solid  white;
+    outline: none;
+    height: 35px;
+    background-color:rgba(242, 242, 242,0.9);
+    color: black;
+    font-size: 16px;
+    position: relative;
+    left: 13px;
+    font-family:Raleway;
+    width: 220px;
+    border-radius: 15px;
+    position: relative;
+    top: 0px;
+    
+}
+
+#s1 input[type="text"],input[type="password"]:hover
+{
+    border: none;
+    outline: none;
+    height: 37px;
+    background-color:rgba(242, 242, 242,0.9);
+    border-bottom: 3.5px solid rgb(0, 45, 179);
+    color: black;
+}
+
+#s1 input[type="button"]
+{
+    border:none;
+    outline: none;
+    background-color: rgb(0, 102, 204);
+    color: snow;
+    height: 38px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-family:Raleway;
+    position: relative;
+    top: 21px;
+    width: 170px;
+    position: relative;
+    left: 38px;
+    padding: 2px;
+    
+   }
+
+   #s1 input[type="button"]:hover
+  {
+      cursor: pointer;
+      background-color:rgb(128, 159, 255);
+      color: white;
+    
+  }
+
+
+
+  
+.d3
+{
+  background-color:rgb(242, 242, 242);
+  height:500px;
+  width:100%;
+  position: absolute;
+  top: 250%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.d3 h1
+{
+  text-align: center;
+  font-size: 40px;
+  font-family: Raleway;
+  color: rgba(0,0,0,0.7);
+  
+
+}
+
+
+
+
+.img1{
+
+  background-image: url("images/homeicon4.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 80px 80px;
+  background-color: white;
+  width: 80px;
+   height: 80px;
+   position: absolute;
+   top: 40%;
+   left: 20%;
+   transform: translate(-50%,-40%);
+   
+
+}
+
+
+.head1{
+
+  height: 150px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-185%,5%);
+  
+}
+.head1 h1
+{
+
+font-size: 20px;
+font-family:koho;
+font-weight: bold;
+
+}
+   
+.head1 p
+{
+    font-size: 14px;
+   font-family: Raleway;
+    color: black;
+    text-align: center;
+}
+/*FIRST LOGO*/
+.img2{
+
+  background-image: url("images/homeicon2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 80px 80px;
+  background-color: white;
+  width: 80px;
+   height: 80px;
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%,-40%);
+   
+
+}
+
+.head2{
+
+  height: 150px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,5%);
+  
+}
+.head2 h1
+{
+
+font-size: 20px;
+font-family:koho;
+font-weight: bold;
+
+}
+
+.head2 p
+{
+    font-size: 14px;
+   font-family: Raleway;
+    color: black;
+    text-align: center;
+}
+/*LOGO 2*/
+
+
+/*LOGOS OF 'what we value most */
+.div4
+{
+  background-color:rgb(45, 89, 134);
+  height:500px;
+  width:100%;
+  position: absolute;
+  top: 450%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.stick
+{
+  height: 360px;
+  width: 400px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%,-50%);
+ border-radius: 1px;
+transition:1s;
+
+}
+.stick:hover
+{
+ z-index: 30;
+ width: 450px;
+ height: 400px;
+box-shadow: 0 25px 60px rgba(5, 29, 75, 0.7);
+
+
+}
+.stick h1
+{
+  text-align: center;
+  font-size: 40px;
+  font-family: Raleway;
+  color: rgba(0,0,0,0.7);
+  font-weight: bold;
+
+}
+
+.stick p
+{
+  color: rgba(0,0,0,0.9);
+  font-family: Raleway;
+  text-align: center;
+  font-size: 14px;
+
+}
+
+
+.stick2
+{
+  height: 360px;
+  width: 400px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%,-50%);
+ border-radius: 1px;
+transition:1s;
+
+}
+.stick2:hover
+{
+ z-index: 30;
+ width: 450px;
+ height: 400px;
+box-shadow: 0 25px 60px rgba(5, 29, 75, 0.7);
+
+}
+
+
+.stick2 h1
+{
+  text-align: center;
+  font-size: 40px;
+  font-family: Raleway;
+  color: rgba(0,0,0,0.7);
+  font-weight: bold;
+
+}
+
+.stick2 p
+{
+  color: rgba(0,0,0,0.9);
+  font-family: Raleway;
+  text-align: center;
+  font-size: 14px;
+
+}
+
+/*DIV THAT CONTAINS 2 BOXES */
+
+
+
+
+
+
+
+
+
+.aboutus 
+{
+  position: relative;
+  top: 4000px;  
+  left:50%;
+
+  transform: translate(-51%,-50%);
+  width: 1375px;
+  height: 370px;
+   
+  background-image:linear-gradient(rgba(0,0,0,0.7),rgba(5, 29, 75, 0.7)),url("https://image.ibb.co/mJ9tLa/image.png");
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+
+}
+
+
+.aboutus h1
+{
+  text-align: center;
+  color: white;
+  font-family: Bad script;
+  font-size: 45px;
+  letter-spacing: 0.02em;
+  padding: 10px;
+  
+}
+
+
+
+
+/*.square {
+  height: 60px;
+  width: 60px;
+  border: 1px dashed white;
+  margin: 0 0 0 55px;
+  position: relative;
+  left: 480px;
+  position: relative;
+  top: 150px;
+  /*   padding: 1px; resize squares 
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  transform: rotateZ(44deg);
+}
+
+.square:hover {
+  background-color: rgba(27, 182, 239, 0.8);
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+.square .icons {
+  position: absolute;
+  transform: rotateZ(-44deg);
+  margin: 20px 0 0px 21px;
+  
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-dribbbler,
+.fa-youtube,
+ {
+  width: 11px;
+  height: 10000px;
+  color: white;
+  font-family: Raleway;
+  font-size: 50px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.square:hover .fa-facebook {
+  color: rgba(59, 89, 152, 1)
+}
+
+.square:hover .fa-twitter {
+  color: rgba(27, 182, 239, 1)
+}
+
+.square:hover .fa-dribbble {
+  color: rgba(199, 59, 111, 1)
+}
+
+.square:hover .fa-youtube {
+  color: rgba(229, 45, 39, 1)
+}
+
+
+*/
+
+
